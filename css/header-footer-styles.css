@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
             justify-content: space-between;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1230px) {
   .header__container {
     padding: 7px 16px;
     margin: 0 15px;
@@ -207,12 +207,15 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 60px;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
 }
-@media (max-width: 1200px) {
+@media (min-width: 1230px) {
   .header__content {
-    gap: calc(20px + 40 * (100vw - 320px) / 880);
+    gap: 60px;
   }
 }
 @media (max-width: 991.98px) {
@@ -272,8 +275,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: calc(14px + 2 * (100vw - 320px) / 880);
   }
 }
-.header .header-menu__link,
-.header .actions-header__link {
+.header .header-menu__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,20 +285,17 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease 0s;
 }
 @media (min-width: 991.98px) {
-  .header .header-menu__link,
-  .header .actions-header__link {
+  .header .header-menu__link {
     padding: 12px 16px;
   }
 }
 @media (any-hover: hover) {
-  .header .header-menu__link:hover,
-  .header .actions-header__link:hover {
+  .header .header-menu__link:hover {
     color: #3aafa9;
   }
 }
 @media (max-width: 991.98px) {
-  .header .header-menu__link,
-  .header .actions-header__link {
+  .header .header-menu__link {
     font-size: 30px;
     padding: 20px 0;
   }
@@ -399,6 +398,35 @@ h1, h2, h3, h4, h5, h6 {
     grid-area: header-actions;
   }
 }
+.actions-header__link {
+  font-size: 18px;
+  color: #192230;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 991.98px) {
+  .actions-header__link {
+    font-size: 30px;
+    padding: 20px 0;
+  }
+}
+@media (any-hover: hover) {
+  .actions-header__link:hover {
+    color: #3aafa9;
+  }
+}
+.actions-header__link-extra {
+  display: block;
+  padding-right: 25px;
+  background: url(../../img/icons/login.svg) right center/17px 18px no-repeat;
+}
+@media (max-width: 991.98px) {
+  .actions-header__link-extra {
+    padding-right: 40px;
+    background: url(../../img/icons/login.svg) right center/25px 28px no-repeat;
+  }
+}
+
 .burger-menu {
   display: none;
   width: 30px;
