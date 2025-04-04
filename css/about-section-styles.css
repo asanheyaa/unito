@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.about {
+  border-radius: 32px 32px 0 0;
+  background: #f2f6fa;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1200px) {
+  .about {
+    padding-top: calc(40px + 20 * (100vw - 320px) / 880);
+  }
+}
+@media (max-width: 1200px) {
+  .about {
+    padding-bottom: calc(40px + 60 * (100vw - 320px) / 880);
+  }
+}
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 125px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1200px) {
+  .about__container {
+    gap: calc(30px + 95 * (100vw - 320px) / 880);
+  }
+}
+@media (max-width: 767.98px) {
+  .about__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.about__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+.about__title {
+  margin-bottom: 20px;
+}
+.about__text {
+  line-height: 150%;
+  color: #004263;
+}
+.about__video {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  position: relative;
+  padding-bottom: 25.1%;
+  border-radius: 27px;
+}
+@media (max-width: 1200px) {
+  .about__video {
+    border-radius: calc(14px + 13 * (100vw - 320px) / 880);
+  }
+}
+@media (max-width: 767.98px) {
+  .about__video {
+    width: 100%;
+    padding-bottom: 57%;
+  }
+}

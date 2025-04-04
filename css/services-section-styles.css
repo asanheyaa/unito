@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.services {
+  padding-top: 88px;
+  padding-bottom: 80px;
+}
+@media (max-width: 1200px) {
+  .services {
+    padding-top: calc(40px + 48 * (100vw - 320px) / 880);
+  }
+}
+@media (max-width: 1200px) {
+  .services {
+    padding-bottom: calc(40px + 40 * (100vw - 320px) / 880);
+  }
+}
+.services__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.services__row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.services__row:not(:last-child) {
+  margin-bottom: 64px;
+}
+@media (max-width: 1200px) {
+  .services__row:not(:last-child) {
+    margin-bottom: calc(30px + 34 * (100vw - 320px) / 880);
+  }
+}
+@media (max-width: 767.98px) {
+  .services__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.services__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+}
+.services__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 131%;
+  color: #192230;
+  margin-bottom: 32px;
+  gap: 30px;
+}
+@media (max-width: 1200px) {
+  .services__title {
+    font-size: calc(22px + 10 * (100vw - 320px) / 880);
+  }
+}
+@media (max-width: 1200px) {
+  .services__title {
+    margin-bottom: calc(30px + 2 * (100vw - 320px) / 880);
+  }
+}
+.services__decor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  -webkit-filter: drop-shadow(0px 20px 10px rgba(24, 125, 157, 0.12));
+          filter: drop-shadow(0px 20px 10px rgba(24, 125, 157, 0.12));
+}
+
+.body-services__item:not(:last-child) {
+  border-bottom: 1px solid #d0dde2;
+}
+.body-services__header {
+  padding: 20px 0;
+  display: block;
+  width: 100%;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  position: relative;
+  padding-right: 30px;
+  text-align: left;
+}
+.body-services__header::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 10px;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background: url(../img/icons/arrow-bottom.svg) right center/contain no-repeat;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.body-services__header._active::after {
+  content: "";
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.body-services__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  color: #192230;
+}
+.body-services__content {
+  padding: 16px 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: #004263;
+}
