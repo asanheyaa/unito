@@ -418,12 +418,12 @@ h1, h2, h3, h4, h5, h6 {
 .actions-header__link-extra {
   display: block;
   padding-right: 25px;
-  background: url(../../img/icons/login.svg) right center/17px 18px no-repeat;
+  background: url(../img/icons/login.svg) right center/17px 18px no-repeat;
 }
 @media (max-width: 991.98px) {
   .actions-header__link-extra {
     padding-right: 40px;
-    background: url(../../img/icons/login.svg) right center/25px 28px no-repeat;
+    background: url(../img/icons/login.svg) right center/25px 28px no-repeat;
   }
 }
 
